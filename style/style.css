@@ -1,0 +1,136 @@
+/* FEUILLE DE STYLE */
+/* ECF "Dynamiser vos sites web avec Javascript", Par Pierre BLANCHARD */
+/* Référence évaluation : GDWFSDVSWEBAJAVAEXAIII1B_339708_20230516044518 */
+
+@font-face {font-family: 'latoLight';src: url(./../images/Lato-Light.ttf);}
+@font-face {font-family: 'latoThin';src: url(./../images/Lato-Thin.ttf);}
+
+.left, .right {
+    height: 100%;
+    width: 50%;
+}
+
+main, .welcome {
+    height: 100vh;
+    font-family: 'latoLight';
+}
+
+.titleLetters, .placeGlobal1, .placeGlobal2, .iconButton, .beginButton:hover, .rollButton:hover, .holdButton:hover, .newButton:hover {
+    color: rgb(253, 63, 63);
+}
+
+.diceWelcome, .boxRoundScore, footer, .dicePoint, .diceWelcomePoint, .backPoint1, .backPoint2 {
+    background-color: rgb(253, 63, 63);
+}
+
+.titlePlayer1, .titlePlayer2, .placeGlobal1, .placeGlobal2, footer h2 {
+    font-family: 'latoThin';
+}
+
+.titleLetters {
+    text-shadow: 0px 0px 10px grey;
+    transition: 0.5s;
+    transform: rotateY(90deg);
+}
+
+.titlePlayer1, .titlePlayer2, .placeGlobal1, .placeGlobal2 {
+    min-width: 400px;
+}
+
+.placeGlobal1, .placeGlobal2 {
+    font-size: 8em;
+}
+
+.dice, .diceWelcome {
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 0px 50px lightgray;
+}
+
+.dicePoint, .diceWelcomePoint, .backPoint1, .backPoint2 {
+    border-radius: 50%;
+}
+
+.diceWelcomePoint, .dice {
+    background-color: white;
+}
+
+.backPoint1, .backPoint2 {
+    display: none;
+    height: 20px;
+    width: 20px;
+}
+
+.beginButton, .rollButton, .holdButton, .newButton {
+    background-color: transparent;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.rollButton, .holdButton {
+    opacity: 50%;
+    pointer-events: none;
+}
+
+.blinking {
+    animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+    0%{color: white}
+    100%{color: #fd3f3f}
+}
+
+footer p {
+    font-family: Arial;
+}
+
+.imgTechs, .dicePoint, .diceWelcomePoint, .backPoint1, .backPoint2 {
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width: 1200px) {
+
+    .titlePlayer1, .titlePlayer2, .placeGlobal1, .placeGlobal2 {
+        font-size: 2em;
+        line-height: 15px;
+        min-width: 100px;
+    }
+
+    .placeGlobal1, .placeGlobal2 {
+        font-weight: bold;
+    }
+
+    .backPoint1, .backPoint2 {
+        height: 10px;
+        width: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .placeGame, .placeGame h3, .beginButton, .rollButton, .holdButton, .newButton, .titlePlayer1, .titlePlayer2 {
+        font-size: 1em;
+        line-height: 15px;
+    }
+
+    .dice, .diceWelcome {
+        scale: 0.5;
+    }
+
+    .titleCurrent1, .titleCurrent2 {
+        font-size: 0.5em;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    footer {
+        height: 100vh;
+        font-size: 0.7em;
+    }
+
+}
